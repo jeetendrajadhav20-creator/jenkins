@@ -11,7 +11,7 @@ pipeline {
             steps {
                 echo "Cloning repository..."
                 // Replace with your repo URL
-                git branch: 'main', url: 'https://github.com/jeetendrajadhav20-creator/jenkins'
+                git branch: 'master', url: 'https://github.com/jeetendrajadhav20-creator/jenkins'
             }
         }
 
@@ -55,3 +55,4 @@ pipeline {
         }
     }
 }
+
