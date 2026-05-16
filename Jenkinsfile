@@ -7,18 +7,9 @@ pipeline {
 
     stages {
 
-        stage('Checkout Code') {
-            steps {
-                echo "Cloning repository..."
-                // Replace with your repo URL
-                git branch: 'master', url: 'https://github.com/jeetendrajadhav20-creator/jenkins'
-            }
-        }
-
         stage('Build') {
             steps {
                 echo "Building the application..."
-                sh 'echo "Compiling code..."'
                 sh 'mkdir -p build && echo "build successful" > build/output.txt'
             }
         }
@@ -55,4 +46,3 @@ pipeline {
         }
     }
 }
-
